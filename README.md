@@ -1,2 +1,2 @@
 # NatureTours.github.io
-This is a project to practice modern CSS . 
+This is a project to practice modern CSS techniques. 
