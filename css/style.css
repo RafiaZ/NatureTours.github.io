@@ -411,6 +411,10 @@ body {
   visibility: hidden;
   transform: translateY(-4rem); }
 
+.form__radio-group {
+  width: 50%;
+  display: inline-block; }
+
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
