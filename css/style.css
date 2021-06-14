@@ -467,11 +467,17 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 75%;
-    height: 50rem;
     background-color: #fff;
     z-index: 3000;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px; }
+  .popup__left {
+    width: 33.33333%; }
+  .popup__right {
+    width: 66.666667%; }
+  .popup__img {
+    display: block;
+    width: 100%; }
 
 .section-about {
   background-color: #f7f7f7;
