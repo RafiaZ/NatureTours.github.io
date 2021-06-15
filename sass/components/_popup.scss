@@ -17,21 +17,6 @@
         
      }
 
-     &__close{
-         &:link,
-         &:visited{
-          color: $color-grey-dark;
-          font-size: 3rem;
-          position: absolute;
-          top: 2.5rem;
-          right: 2.5rem;
-          text-decoration: none;
-        display: inline-block;
-        transition: all .2s;
-           
-    }
-     }
-
     &__content{
         @include absCenter;
         width: 75%;
@@ -41,6 +26,9 @@
         border-radius: 3px;
         display: table;
         overflow: hidden;
+        opacity: 0;
+        transform: translate(-50%,-50%) scale(.5);
+        transition: all .4s .2s;
     }
 
     &__left{
@@ -71,5 +59,27 @@
     column-rule:1px solid $color-grey-light-2 ;
     hyphens: auto;
     -webkit-hyphens: auto;
+    }
+
+    &:target &__content{
+        opacity: 1;
+        transform: translate(-50%,-50%) scale(1);
+    }
+    &__close{
+        &:link,
+        &:visited{
+         color: $color-grey-dark;
+         font-size: 3rem;
+         position: absolute;
+         top: 2.5rem;
+         right: 2.5rem;
+         text-decoration: none;
+       display: inline-block;
+       transition: all .2s;
+       line-height: 1;
+   }
+   &:hover{
+       color: $color-primary;
+   }
     }
 }
