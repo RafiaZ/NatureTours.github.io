@@ -16,6 +16,7 @@
         box-shadow: 0 2rem 4rem rgba($color-black,.2);
         border-radius: 3px;
         display: table;
+        overflow: hidden;
     }
 
     &__left{
@@ -25,6 +26,8 @@
     &__right{
         width: 66.666667%;
         display: table-cell;
+        vertical-align: middle;
+        padding: 3rem 5rem;
     }
     &__img{
 
@@ -33,7 +36,11 @@
     }
 
     &__text{
-
-
+      font-size: 1.4rem;
+      margin-bottom: 4rem;
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule:1px solid $color-grey-light-2 ;
+    hyphens: auto;
     }
 }
