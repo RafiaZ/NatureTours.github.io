@@ -14,6 +14,22 @@
      &:target{
          opacity: 1;
          visibility: visible;
+        
+     }
+
+     &__close{
+         &:link,
+         &:visited{
+          color: $color-grey-dark;
+          font-size: 3rem;
+          position: absolute;
+          top: 2.5rem;
+          right: 2.5rem;
+          text-decoration: none;
+        display: inline-block;
+        transition: all .2s;
+           
+    }
      }
 
     &__content{
