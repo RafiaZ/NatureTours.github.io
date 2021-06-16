@@ -8,8 +8,16 @@ html {
   font-size: 62.5%; }
   @media (max-width: 600px) {
     html {
-      font-size: 50%;
-      color: black; } }
+      font-size: 50%; } }
+  @media (max-width: 600px) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 1200px) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 1800px) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box; }
