@@ -10,7 +10,7 @@ html {
 
 
   @include respond(phone){
-      font-size: 50%;
+      font-size: 50%; //1rem =16px 
   }
 
   @include respond(tab-port){
