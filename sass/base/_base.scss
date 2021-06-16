@@ -7,6 +7,12 @@
 html {
   //this defines what one rem is
   font-size: 62.5%;
+
+
+  @include respond-phone{
+    font-size: 50%;
+    color: black;
+  }
 }
 body {
   box-sizing: border-box;
