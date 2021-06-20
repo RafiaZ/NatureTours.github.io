@@ -19,6 +19,11 @@
         transition: all .3s;
 
 
+        @include respond(tab-land){
+            width: 50%;
+        }
+
+
         &:focus{
             outline: none;
             box-shadow: 0 1rem 2rem rgba($color-black,.1);
@@ -51,7 +56,11 @@
 
     &__radio-group{
         width: 49%;
-        display: inline-block;  
+        display: inline-block;
+        
+        @include respond(tab-land){
+            width: 39%;
+        }
         
         @include respond(tab-port){
             width: 100%;
