@@ -45,6 +45,10 @@
        &:not(:last-child){
            margin-right: 1.5rem;
        }
+
+       @include respond(tab-land){
+        margin-right: 1rem;
+    }
     }
 
     &__link{
@@ -73,6 +77,11 @@
 
         @include respond(tab-port){
             width: 100%;
+            float: none;
+        }
+
+        @include respond(tab-land){
+            width: 90%;
             float: none;
         }
 
