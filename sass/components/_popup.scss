@@ -35,12 +35,18 @@
         transform: translate(-50%,-50%) scale(.5);
         transition: all .4s .2s;
 
-        @include respond( tab-port){
-           padding: 5rem;
-           row-gap: 4rem;
-           width: 45%;
-           height: 10vh;
-        }
+        @include respond(tab-port){
+            padding: 5rem;
+            row-gap: 4rem;
+               
+         }
+
+    @include respond(tab-port){
+        padding: 5rem;
+        row-gap: 4rem;
+           
+     }
+
 
     }
 
@@ -48,6 +54,12 @@
         width: 33.33333%;
         display: table-cell;
 
+
+        @include respond( tab-land){
+            display: table-row;
+            padding: 4rem;
+             
+        }
         @include respond( tab-port){
             display: table-row;
              
@@ -63,7 +75,7 @@
 
         @include respond( tab-port){
             display: table-row;
-            padding: 0;
+            padding: 2rem;
         }
     }
     &__img{
@@ -71,11 +83,18 @@
     display: block;
     width: 100%;
 
-    @include respond( tab-port){
-       width: 50%;
-       display: inline-block;
+    @include respond(tab-land){
+        width:40%;
+        display: inline-block;
+        
+ 
+     }  
 
-    }
+    @include respond(tab-port){
+        width:40%;
+        display: inline-block;
+ 
+     }
 
 
     }
