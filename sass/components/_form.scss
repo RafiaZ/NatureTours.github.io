@@ -61,7 +61,7 @@
         display: inline-block;
 
         @include respond(tab-land) {
-            width: 70%;
+            width: 60%;
             margin-bottom: 2rem;
         }
 
